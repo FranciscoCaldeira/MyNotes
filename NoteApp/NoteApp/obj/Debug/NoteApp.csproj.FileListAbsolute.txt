@@ -6,7 +6,6 @@ C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de S
 C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#project\NoteApp\NoteApp\bin\Debug\MySql.Data.dll
 C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#project\NoteApp\NoteApp\bin\Debug\Ubiety.Dns.Core.dll
 C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#project\NoteApp\NoteApp\bin\Debug\Renci.SshNet.dll
-C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#project\NoteApp\NoteApp\obj\Debug\NoteApp.csprojAssemblyReference.cache
 C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#project\NoteApp\NoteApp\obj\Debug\NoteApp.Dash.resources
 C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#project\NoteApp\NoteApp\obj\Debug\NoteApp.Donation.resources
 C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#project\NoteApp\NoteApp\obj\Debug\NoteApp.Login.resources
@@ -15,3 +14,4 @@ C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de S
 C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#project\NoteApp\NoteApp\obj\Debug\NoteApp.csproj.CopyComplete
 C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#project\NoteApp\NoteApp\obj\Debug\NoteApp.exe
 C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#project\NoteApp\NoteApp\obj\Debug\NoteApp.pdb
+C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#project\NoteApp\NoteApp\obj\Debug\NoteApp.csprojAssemblyReference.cache

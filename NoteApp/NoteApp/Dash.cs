@@ -15,18 +15,19 @@ namespace NoteApp
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void editToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Login login = new Login();
             login.Show();
-            //esconde o Login
+            //esconde o dashboard
             this.Hide();
         }
 
-        private void btn_donate_Click(object sender, EventArgs e)
+        private void contentsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Donation donation = new Donation();
             donation.Show();
         }
+
     }
 }
