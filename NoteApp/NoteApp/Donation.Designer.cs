@@ -30,8 +30,8 @@
         {
             this.btn_reset = new System.Windows.Forms.Button();
             this.input_name = new System.Windows.Forms.TextBox();
-            this.username = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbl_username = new System.Windows.Forms.Label();
+            this.lbl_title = new System.Windows.Forms.Label();
             this.input_nif = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.input_country = new System.Windows.Forms.TextBox();
@@ -57,23 +57,23 @@
             this.input_name.Size = new System.Drawing.Size(305, 22);
             this.input_name.TabIndex = 10;
             // 
-            // username
+            // lbl_username
             // 
-            this.username.AutoSize = true;
-            this.username.Location = new System.Drawing.Point(54, 70);
-            this.username.Name = "username";
-            this.username.Size = new System.Drawing.Size(49, 17);
-            this.username.TabIndex = 8;
-            this.username.Text = "Nome:";
+            this.lbl_username.AutoSize = true;
+            this.lbl_username.Location = new System.Drawing.Point(54, 70);
+            this.lbl_username.Name = "lbl_username";
+            this.lbl_username.Size = new System.Drawing.Size(49, 17);
+            this.lbl_username.TabIndex = 8;
+            this.lbl_username.Text = "Nome:";
             // 
-            // label1
+            // lbl_title
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(54, 28);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 17);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "Dados de Faturação";
+            this.lbl_title.AutoSize = true;
+            this.lbl_title.Location = new System.Drawing.Point(54, 28);
+            this.lbl_title.Name = "lbl_title";
+            this.lbl_title.Size = new System.Drawing.Size(137, 17);
+            this.lbl_title.TabIndex = 13;
+            this.lbl_title.Text = "Dados de Faturação";
             // 
             // input_nif
             // 
@@ -146,10 +146,10 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.input_nif);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbl_title);
             this.Controls.Add(this.btn_reset);
             this.Controls.Add(this.input_name);
-            this.Controls.Add(this.username);
+            this.Controls.Add(this.lbl_username);
             this.Name = "Donation";
             this.Text = "Donation";
             this.ResumeLayout(false);
@@ -161,8 +161,8 @@
 
         private System.Windows.Forms.Button btn_reset;
         private System.Windows.Forms.TextBox input_name;
-        private System.Windows.Forms.Label username;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl_username;
+        private System.Windows.Forms.Label lbl_title;
         private System.Windows.Forms.TextBox input_nif;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox input_country;
