@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Drawing; //for the font
-using System.Drawing.Printing; //for printing
+using System.Drawing.Printing; //for printing the document
 using System.IO; //for file save
 using System.Windows.Forms;
 
@@ -8,20 +8,19 @@ namespace NoteApp
 {
     public partial class Dashboard : Form
     {
-        public SaveFileDialog sfd;//instance of savefiledialog to save files
-        public OpenFileDialog ofd;//instance of openfiledialog to open files
+        public SaveFileDialog sfd; //instance of savefiledialog to save files
+        public OpenFileDialog ofd; //instance of openfiledialog to open files
         public int index; //???
 
-        public Dashboard()
+    public Dashboard()
         {
             InitializeComponent();
             sfd = new SaveFileDialog();
             ofd = new OpenFileDialog();
 
-            this.Text = "NotesApp - Sem título";
-            richTextBox.TabIndex = 5;
-            undoToolStripMenuItem.Enabled = false;
-            richTextBox.Focus();
+            this.Text = "NotesApp - Sem título"; //title of form
+            undoToolStripMenuItem.Enabled = false; //disable undo
+            richTextBox.Focus(); //focus textarea
         }
 
         private void Dash_Load(object sender, EventArgs e)
@@ -32,9 +31,8 @@ namespace NoteApp
         #region menustrip "Ficheiro"
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            sfd.Title = "Save";
-            //msg, title, btn type, icon type
-            DialogResult dr = MessageBox.Show("Pretende salvar este ficheiro?", "Salvar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            sfd.Title = "Salvar"; //savefiledialog title
+            DialogResult dr = MessageBox.Show("Pretende salvar este ficheiro?", "Salvar", MessageBoxButtons.YesNo, MessageBoxIcon.Question); //msg, title of box, btn type, icon type
             if (dr.Equals(DialogResult.Yes))//user click on yes button           
             {
                 SaveFile();//calling user defined function SaveFile function
@@ -70,12 +68,12 @@ namespace NoteApp
 
         private void saveLocalToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            string fileName = saveFileDialog1.FileName;
-            string textNote = richTextBox.Text;
+            string fileName = saveFileDialog1.FileName; //saveFileDialog choosen name
+            string textNote = richTextBox.Text; //text
 
             if (textNote.Equals(""))
             {
-                MessageBox.Show("Erro, precisa inserir notas para guardar ficheiro.");
+                MessageBox.Show("Precisa inserir notas para guardar ficheiro.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
@@ -221,7 +219,11 @@ namespace NoteApp
         {
 
         }
-
-        
+        //-----------------------------------------------------------------------------------------------------------------------
+        private void encriptdecriptToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form1 features = new Form1();
+            features.Show();
+        }
     }
 }

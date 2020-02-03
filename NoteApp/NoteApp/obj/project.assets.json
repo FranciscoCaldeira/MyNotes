@@ -11,6 +11,20 @@
           "lib/BouncyCastle.Crypto.dll": {}
         }
       },
+      "CyberCrypt/1.0.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "System.Data",
+          "System.Xml"
+        ],
+        "compile": {
+          "lib/net20/CyberCrypt.dll": {}
+        },
+        "runtime": {
+          "lib/net20/CyberCrypt.dll": {}
+        }
+      },
       "Google.Protobuf/3.6.1": {
         "type": "package",
         "compile": {
@@ -18,6 +32,19 @@
         },
         "runtime": {
           "lib/net45/Google.Protobuf.dll": {}
+        }
+      },
+      "MetroModernUI/1.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net/MetroFramework.Design.dll": {},
+          "lib/net/MetroFramework.Fonts.dll": {},
+          "lib/net/MetroFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net/MetroFramework.Design.dll": {},
+          "lib/net/MetroFramework.Fonts.dll": {},
+          "lib/net/MetroFramework.dll": {}
         }
       },
       "MySql.Data/8.0.19": {
@@ -70,6 +97,20 @@
           "lib/BouncyCastle.Crypto.dll": {}
         }
       },
+      "CyberCrypt/1.0.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "System.Data",
+          "System.Xml"
+        ],
+        "compile": {
+          "lib/net20/CyberCrypt.dll": {}
+        },
+        "runtime": {
+          "lib/net20/CyberCrypt.dll": {}
+        }
+      },
       "Google.Protobuf/3.6.1": {
         "type": "package",
         "compile": {
@@ -77,6 +118,19 @@
         },
         "runtime": {
           "lib/net45/Google.Protobuf.dll": {}
+        }
+      },
+      "MetroModernUI/1.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net/MetroFramework.Design.dll": {},
+          "lib/net/MetroFramework.Fonts.dll": {},
+          "lib/net/MetroFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net/MetroFramework.Design.dll": {},
+          "lib/net/MetroFramework.Fonts.dll": {},
+          "lib/net/MetroFramework.dll": {}
         }
       },
       "MySql.Data/8.0.19": {
@@ -129,6 +183,20 @@
           "lib/BouncyCastle.Crypto.dll": {}
         }
       },
+      "CyberCrypt/1.0.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "System.Data",
+          "System.Xml"
+        ],
+        "compile": {
+          "lib/net20/CyberCrypt.dll": {}
+        },
+        "runtime": {
+          "lib/net20/CyberCrypt.dll": {}
+        }
+      },
       "Google.Protobuf/3.6.1": {
         "type": "package",
         "compile": {
@@ -136,6 +204,19 @@
         },
         "runtime": {
           "lib/net45/Google.Protobuf.dll": {}
+        }
+      },
+      "MetroModernUI/1.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net/MetroFramework.Design.dll": {},
+          "lib/net/MetroFramework.Fonts.dll": {},
+          "lib/net/MetroFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net/MetroFramework.Design.dll": {},
+          "lib/net/MetroFramework.Fonts.dll": {},
+          "lib/net/MetroFramework.dll": {}
         }
       },
       "MySql.Data/8.0.19": {
@@ -188,6 +269,20 @@
           "lib/BouncyCastle.Crypto.dll": {}
         }
       },
+      "CyberCrypt/1.0.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "System.Data",
+          "System.Xml"
+        ],
+        "compile": {
+          "lib/net20/CyberCrypt.dll": {}
+        },
+        "runtime": {
+          "lib/net20/CyberCrypt.dll": {}
+        }
+      },
       "Google.Protobuf/3.6.1": {
         "type": "package",
         "compile": {
@@ -195,6 +290,19 @@
         },
         "runtime": {
           "lib/net45/Google.Protobuf.dll": {}
+        }
+      },
+      "MetroModernUI/1.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net/MetroFramework.Design.dll": {},
+          "lib/net/MetroFramework.Fonts.dll": {},
+          "lib/net/MetroFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net/MetroFramework.Design.dll": {},
+          "lib/net/MetroFramework.Fonts.dll": {},
+          "lib/net/MetroFramework.dll": {}
         }
       },
       "MySql.Data/8.0.19": {
@@ -252,6 +360,18 @@
         "lib/BouncyCastle.Crypto.dll"
       ]
     },
+    "CyberCrypt/1.0.0": {
+      "sha512": "+7TuPSIN5yD7R7+fqa/qbLps+PayhJrdEo2+wn1fQSPaFfZXKWcAHTsDpAcX5pGIGGOkeAeJbEvLrnNMdQC93A==",
+      "type": "package",
+      "path": "cybercrypt/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "cybercrypt.1.0.0.nupkg.sha512",
+        "cybercrypt.nuspec",
+        "lib/net20/CyberCrypt.dll"
+      ]
+    },
     "Google.Protobuf/3.6.1": {
       "sha512": "741fGeDQjixBJaU2j+0CbrmZXsNJkTn/hWbOh4fLVXndHsCclJmWznCPWrJmPoZKvajBvAz3e8ECJOUvRtwjNQ==",
       "type": "package",
@@ -265,6 +385,20 @@
         "lib/net45/Google.Protobuf.xml",
         "lib/netstandard1.0/Google.Protobuf.dll",
         "lib/netstandard1.0/Google.Protobuf.xml"
+      ]
+    },
+    "MetroModernUI/1.4.0": {
+      "sha512": "p2F3w8bF1tb0tpkDceEVO65UYMKnJxdQyNxVyl/OjrFZHighicLYZDppKkiqmvBZ10XUi2mqHiIJUzXBP3GElQ==",
+      "type": "package",
+      "path": "metromodernui/1.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net/MetroFramework.Design.dll",
+        "lib/net/MetroFramework.Fonts.dll",
+        "lib/net/MetroFramework.dll",
+        "metromodernui.1.4.0.nupkg.sha512",
+        "metromodernui.nuspec"
       ]
     },
     "MySql.Data/8.0.19": {
@@ -320,6 +454,8 @@
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.7.2": [
+      "CyberCrypt >= 1.0.0",
+      "MetroModernUI >= 1.4.0",
       "MySql.Data >= 8.0.19"
     ]
   },
@@ -356,6 +492,14 @@
     "frameworks": {
       "net472": {
         "dependencies": {
+          "CyberCrypt": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
+          "MetroModernUI": {
+            "target": "Package",
+            "version": "[1.4.0, )"
+          },
           "MySql.Data": {
             "target": "Package",
             "version": "[8.0.19, )"

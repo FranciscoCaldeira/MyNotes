@@ -42,16 +42,14 @@ namespace NoteApp
 
                 if(row == 1)
                 {
-                    MessageBox.Show("Login com sucesso");
-                    //Hide form
-                    this.Hide();
-                    //create form
-                    Dashboard dashboard = new Dashboard();
-                    //show form
-                    dashboard.Show();
+                    MessageBox.Show("Login com sucesso", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    this.Hide();  //Hide form
+                    Dashboard dashboard = new Dashboard(); //create form
+                    dashboard.Show(); //show form
                 } else
                 {
-                    MessageBox.Show("Ops.. ocorreu um erro, tenta novamente!");
+                    MessageBox.Show("Ops.. ocorreu um erro, tenta novamente!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
@@ -74,7 +72,7 @@ namespace NoteApp
         //reset btn
         private void btn_reset_Click(object sender, EventArgs e)
         {
-            //limpa as credenciais
+            //clean credentials
             input_username.Text = "";
             input_password.Text = "";
         }
@@ -82,24 +80,20 @@ namespace NoteApp
         //exit btn
         private void btn_exit_Click(object sender, EventArgs e)
         {
-            //displatform
-            Application.Exit();
+            Application.Exit(); //DISPLATFORM
         }
 
 
         private void registarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            //create form
             Register register = new Register();
-            //show form
             register.Show();
         }
 
         //menu strip about show box
         private void acercaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //msg, title, tipo de button, tipo de icon
             MessageBox.Show(" 1: Regista-te na aplicação.\n 2: Faz login na aplicação.\n 3: 30 dias para usar as \"Tootls\".\n 4: Faz Donate para continuar a usufruir das \"Tootls\".\n\n DIS NoteAPP - version 1.0.0 (beta)", "Help", MessageBoxButtons.OK, MessageBoxIcon.Information);
             
         }
