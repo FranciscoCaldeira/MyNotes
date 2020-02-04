@@ -9,14 +9,13 @@ using System.Xml;
 
 namespace NoteApp
 {
-    public partial class password : Form
+    public partial class EncDecSetpassword : Form
     {
         public string newpass;
 
-        public password()
+        public EncDecSetpassword()
         {
             InitializeComponent();
-            this.Text = "Set New Password";
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -28,7 +27,7 @@ namespace NoteApp
             }
             else
             {
-                MessageBox.Show("Password doesn't match", "Error");
+                MessageBox.Show("Password não coincidem.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 textBox1.Clear();
                 textBox2.Clear();
                 textBox1.Focus();

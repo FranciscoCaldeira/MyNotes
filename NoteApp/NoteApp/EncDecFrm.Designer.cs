@@ -1,6 +1,6 @@
 ﻿namespace NoteApp
 {
-    partial class Form1
+    partial class EncDecFrm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EncDecFrm));
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -64,10 +64,10 @@
             this.metroTabControl1.Alignment = System.Windows.Forms.TabAlignment.Bottom;
             this.metroTabControl1.Controls.Add(this.tabPage2);
             this.metroTabControl1.Controls.Add(this.tabPage3);
-            this.metroTabControl1.Location = new System.Drawing.Point(31, 92);
+            this.metroTabControl1.Location = new System.Drawing.Point(31, 122);
             this.metroTabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 0;
+            this.metroTabControl1.SelectedIndex = 1;
             this.metroTabControl1.Size = new System.Drawing.Size(715, 198);
             this.metroTabControl1.Style = MetroFramework.MetroColorStyle.Teal;
             this.metroTabControl1.TabIndex = 25;
@@ -88,7 +88,7 @@
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Size = new System.Drawing.Size(707, 156);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "FOLDER    ";
+            this.tabPage2.Text = "Pasta    ";
             // 
             // dataGridView1
             // 
@@ -139,7 +139,7 @@
             this.btnListClear.Name = "btnListClear";
             this.btnListClear.Size = new System.Drawing.Size(112, 28);
             this.btnListClear.TabIndex = 39;
-            this.btnListClear.Text = "Clear";
+            this.btnListClear.Text = "Limpar";
             this.btnListClear.UseVisualStyleBackColor = true;
             this.btnListClear.Click += new System.EventHandler(this.btnListClear_Click);
             // 
@@ -150,7 +150,7 @@
             this.btnAddFolder.Name = "btnAddFolder";
             this.btnAddFolder.Size = new System.Drawing.Size(112, 28);
             this.btnAddFolder.TabIndex = 37;
-            this.btnAddFolder.Text = "Add";
+            this.btnAddFolder.Text = "Adicionar";
             this.btnAddFolder.UseVisualStyleBackColor = true;
             this.btnAddFolder.Click += new System.EventHandler(this.btnAddFolder_Click);
             // 
@@ -176,7 +176,7 @@
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Size = new System.Drawing.Size(707, 156);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "FILES   ";
+            this.tabPage3.Text = "Ficheiros   ";
             // 
             // btnFileEncrypt
             // 
@@ -209,6 +209,7 @@
             this.txtBrowse.MaxLength = 32767;
             this.txtBrowse.Name = "txtBrowse";
             this.txtBrowse.PasswordChar = '\0';
+            this.txtBrowse.PromptText = "[Browse]";
             this.txtBrowse.ReadOnly = true;
             this.txtBrowse.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.txtBrowse.SelectedText = "";
@@ -235,7 +236,7 @@
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel4,
             this.toolStripStatusLabel6});
-            this.statusStrip1.Location = new System.Drawing.Point(7, 311);
+            this.statusStrip1.Location = new System.Drawing.Point(7, 336);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
             this.statusStrip1.Size = new System.Drawing.Size(765, 27);
@@ -266,9 +267,11 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.preferenceToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 31);
+            this.menuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow;
+            this.menuStrip1.Location = new System.Drawing.Point(0, 61);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(779, 30);
+            this.menuStrip1.Stretch = false;
             this.menuStrip1.TabIndex = 29;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -279,44 +282,44 @@
             this.setPasswordToolStripMenuItem,
             this.toolStripSeparator1});
             this.preferenceToolStripMenuItem.Name = "preferenceToolStripMenuItem";
-            this.preferenceToolStripMenuItem.Size = new System.Drawing.Size(93, 26);
-            this.preferenceToolStripMenuItem.Text = "Preference";
+            this.preferenceToolStripMenuItem.Size = new System.Drawing.Size(60, 24);
+            this.preferenceToolStripMenuItem.Text = "Menu";
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(178, 26);
-            this.toolStripMenuItem1.Text = "Login User";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(202, 26);
+            this.toolStripMenuItem1.Text = "Login";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // setPasswordToolStripMenuItem
             // 
             this.setPasswordToolStripMenuItem.Name = "setPasswordToolStripMenuItem";
-            this.setPasswordToolStripMenuItem.Size = new System.Drawing.Size(178, 26);
-            this.setPasswordToolStripMenuItem.Text = "Set Password";
+            this.setPasswordToolStripMenuItem.Size = new System.Drawing.Size(202, 26);
+            this.setPasswordToolStripMenuItem.Text = "Alterar Password";
             this.setPasswordToolStripMenuItem.Click += new System.EventHandler(this.setPasswordToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(175, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(199, 6);
             // 
             // metroLabel2
             // 
-            this.metroLabel2.Location = new System.Drawing.Point(7, 65);
+            this.metroLabel2.Location = new System.Drawing.Point(7, 97);
             this.metroLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(765, 23);
             this.metroLabel2.TabIndex = 31;
-            this.metroLabel2.Text = "Hello";
+            this.metroLabel2.Text = "Olá";
             this.metroLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Form1
+            // EncDecFrm
             // 
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(779, 345);
+            this.ClientSize = new System.Drawing.Size(779, 369);
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
@@ -325,7 +328,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "EncDecFrm";
             this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Teal;

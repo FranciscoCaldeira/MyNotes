@@ -125,7 +125,6 @@ namespace NoteApp
                 //Get font
                 Font font = fontDialog1.Font;
                 //set richTextBox properties.
-                this.richTextBox.Text = string.Format("Font is: {0}", font.Name);
                 this.richTextBox.Font = font;
             }
         }
@@ -217,13 +216,35 @@ namespace NoteApp
 
         private void selectAllToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Replace();
         }
-        //-----------------------------------------------------------------------------------------------------------------------
+
+        private void Replace()
+        {
+            ReplaceWord r1 = new ReplaceWord();
+            r1.ShowDialog();
+            String findWord = r1.findWord;
+            String replaceWord = r1.replaceWord;
+            if (findWord != "")
+            {
+                richTextBox.Text = richTextBox.Text.Replace(findWord, replaceWord);
+                MessageBox.Show("Done", "Done", MessageBoxButtons.OK);
+            }
+            else
+            {
+                MessageBox.Show("Nothing to replace", "Done", MessageBoxButtons.OK);
+            }
+        }
+
         private void encriptdecriptToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form1 features = new Form1();
+            EncDecFrm features = new EncDecFrm();
             features.Show();
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(" 1: Regista-te na aplicação.\n 2: Faz login na aplicação.\n 3: 30 dias para usar as \"Tootls\".\n 4: Faz Donate para continuar a usufruir das \"Tootls\".\n\n DIS NoteAPP - version 1.0.0 (beta)", "Acerca", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

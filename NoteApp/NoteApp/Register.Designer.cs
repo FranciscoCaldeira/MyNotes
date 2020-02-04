@@ -139,7 +139,7 @@
             this.btn_register.TabIndex = 0;
             this.btn_register.Text = "Registar";
             this.btn_register.UseVisualStyleBackColor = true;
-            this.btn_register.Click += new System.EventHandler(this.btn_login_Click);
+            this.btn_register.Click += new System.EventHandler(this.btn_register_Click);
             // 
             // btn_exit
             // 
@@ -161,6 +161,7 @@
             this.btn_reset.TabIndex = 7;
             this.btn_reset.Text = "Reset";
             this.btn_reset.UseVisualStyleBackColor = true;
+            this.btn_reset.Click += new System.EventHandler(this.btn_reset_Click);
             // 
             // menuStrip1
             // 
@@ -180,7 +181,7 @@
             this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
             this.loginToolStripMenuItem.Size = new System.Drawing.Size(60, 24);
             this.loginToolStripMenuItem.Text = "&Login";
-            this.loginToolStripMenuItem.Click += new System.EventHandler(this.registarToolStripMenuItem_Click);
+            this.loginToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
@@ -193,8 +194,9 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(146, 26);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.aboutToolStripMenuItem.Text = "Acerca...";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // Register
             // 

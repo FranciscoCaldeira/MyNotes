@@ -21,26 +21,66 @@ namespace NoteApp
             InitializeComponent();
         }
 
-        //exit btn
+        #region ToolStripMenuItem click
+        /// <summary>
+        /// Click in Login
+        /// </summary>
+        private void loginToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login login = new Login();
+            login.Show();
+        }
+        /// <summary>
+        /// Click in About
+        /// </summary>
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(" 1: Regista-te na aplicação.\n 2: Faz login na aplicação.\n 3: 30 dias para usar as \"Tootls\".\n 4: Faz Donate para continuar a usufruir das \"Tootls\".\n\n DIS NoteAPP - version 1.0.0 (beta)", "Acerca", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+        #endregion
+
+        #region btn clicks
+        /// <summary>
+        /// btn reset, to reset the inputs 
+        /// </summary>
+        private void btn_reset_Click(object sender, EventArgs e)
+        {
+            input_username.Text = "";
+            input_password.Text = "";
+        }
+        /// <summary>
+        /// btn to exit aplication
+        /// </summary>
         private void btn_exit_Click(object sender, EventArgs e)
         {
-            //displatform
             Application.Exit();
-            
         }
+        /// <summary>
+        /// click in register
+        /// </summary>
+        private void btn_register_Click(object sender, EventArgs e)
+        {
+            Do_registration();
+        }
+        #endregion
 
-        private void btn_login_Click(object sender, EventArgs e)
+        #region Function do user registration
+        /// <summary>
+        /// validate, and insert data in DB
+        /// </summary>
+        private void Do_registration()
         {
             string email = input_username.Text;
             string password = input_password.Text;
 
             if (email.Equals(""))
             {
-                MessageBox.Show("Insira o email.");
+                MessageBox.Show("Insira o email.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else if (password.Equals(""))
             {
-                MessageBox.Show("Insira a password.");
+                MessageBox.Show("Insira a password.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
@@ -53,28 +93,17 @@ namespace NoteApp
 
                 if (row == 1)
                 {
-                    MessageBox.Show("Login com sucesso");
-                    //Hide form
+                    MessageBox.Show("Registo com sucesso.", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Hide();
-                    //create form
                     Dashboard dashboard = new Dashboard();
-                    //show form
                     dashboard.Show();
                 }
                 else
                 {
-                    MessageBox.Show("Ops.. ocorreu um erro, tenta novamente!");
+                    MessageBox.Show("Ops.. ocorreu um erro, tenta novamente!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
         }
-
-        private void registarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            //create form
-            Login login = new Login();
-            //show form
-            login.Show();
-        }
+        #endregion
     }
 }

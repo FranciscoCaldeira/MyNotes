@@ -1,7 +1,6 @@
 C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#project\NoteApp\NoteApp\obj\Debug\NoteApp.Dashboard.resources
 C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#project\NoteApp\NoteApp\obj\Debug\NoteApp.Donation.resources
 C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#project\NoteApp\NoteApp\obj\Debug\NoteApp.FindWord.resources
-C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#project\NoteApp\NoteApp\obj\Debug\NoteApp.Form1.resources
 C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#project\NoteApp\NoteApp\obj\Debug\NoteApp.Login.resources
 C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#project\NoteApp\NoteApp\obj\Debug\NoteApp.Properties.Resources.resources
 C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#project\NoteApp\NoteApp\obj\Debug\NoteApp.Register.resources
@@ -22,3 +21,7 @@ C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de S
 C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#project\NoteApp\NoteApp\obj\Debug\NoteApp.exe
 C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#project\NoteApp\NoteApp\obj\Debug\NoteApp.pdb
 C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#project\NoteApp\NoteApp\obj\Debug\NoteApp.csprojAssemblyReference.cache
+C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#project\NoteApp\NoteApp\obj\Debug\NoteApp.EncDecFrm.resources
+C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#project\NoteApp\NoteApp\obj\Debug\NoteApp.EncDecCheckpassword.resources
+C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#project\NoteApp\NoteApp\obj\Debug\NoteApp.EncDecSetpassword.resources
+C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#project\NoteApp\NoteApp\obj\Debug\NoteApp.ReplaceWord.resources

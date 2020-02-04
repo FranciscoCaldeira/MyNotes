@@ -8,7 +8,7 @@ using CyberCrypt;
 
 namespace NoteApp
 {
-    public partial class Form1 : MetroFramework.Forms.MetroForm
+    public partial class EncDecFrm : MetroFramework.Forms.MetroForm
     {
 
         #region "DECLARATION"
@@ -57,7 +57,7 @@ namespace NoteApp
                 ((Control)this.tabPage2).Enabled = true;
                 ((Control)this.tabPage3).Enabled = true;
                 toolStripMenuItem1.Enabled = false;
-                metroLabel2.Text = strPCName + " you are logged, you are get full access";
+                metroLabel2.Text = strPCName + " sessão iniciada, utiliza a ferramenta.";
                 //Load Folder LOG DataGridView
                 if (File.Exists(strHimbara_f))
                 {
@@ -85,14 +85,14 @@ namespace NoteApp
                 ((Control)this.tabPage2).Enabled = false;
                 ((Control)this.tabPage3).Enabled = false;
                 toolStripMenuItem1.Enabled = true;
-                metroLabel2.Text = strPCName + " please login user to get full access";
+                metroLabel2.Text = strPCName + " faz login para utilizar a ferramenta";
             }
         }
         #endregion
 
         #region"INITLOAD"
 
-        public Form1()
+        public EncDecFrm()
         {
             InitializeComponent();
 
@@ -126,7 +126,7 @@ namespace NoteApp
             toolStripStatusLabel6.Text = "";
 
             strPCName = Environment.MachineName; // pc MachineName
-            metroLabel2.Text = "Olá " + strPCName + " por favor faz login para encriptar/desencriptar";
+            metroLabel2.Text = "Olá " + strPCName + " por favor faz login para utilizar a tool";
             metroTabControl1.SelectedIndex = 2;
 
             loadConfig();
@@ -181,7 +181,7 @@ namespace NoteApp
                 }
                 else
                 {
-                    MessageBox.Show("File Not Found", "Info");
+                    MessageBox.Show("Ficheiro não existe", "Info");
                     _FILEencrypt = false;
                     btnFileEncrypt.Text = "Encrypt";
                     btnFileEncrypt.Enabled = false;
@@ -199,6 +199,8 @@ namespace NoteApp
                 CyberCrypt._AES256.DecryptFile(strFileDecrypt, strUnivPassword);
                 toolStripStatusLabel4.Text = "[DECRYPT SUCCESS]";
                 toolStripStatusLabel4.BackColor = Color.Green;
+                toolStripStatusLabel6.Text = ""; //added
+                toolStripStatusLabel6.BackColor = Color.White; //added 
             }
             else
             {
@@ -208,6 +210,8 @@ namespace NoteApp
                 CyberCrypt._AES256.EncryptFile(strFileEncrypt, strUnivPassword);
                 toolStripStatusLabel4.Text = "[ENCRYPT SUCCESS]";
                 toolStripStatusLabel4.BackColor = Color.Green;
+                toolStripStatusLabel6.Text = ""; //added
+                toolStripStatusLabel6.BackColor = Color.White; //added 
             }
             txtBrowse.Clear();
             btnFileEncrypt.Enabled = false;
@@ -233,6 +237,8 @@ namespace NoteApp
                     strFolder = strFolder.Substring(0, strFolder.LastIndexOf("."));
                     toolStripStatusLabel6.Text = "[UNLOCK SUCCESS]";
                     toolStripStatusLabel6.BackColor = Color.Green;
+                    toolStripStatusLabel4.Text = ""; //added
+                    toolStripStatusLabel4.BackColor = Color.White; //added
                     strFolderOri = strFolder;
                     strFolderState = "Unlock";
                 }
@@ -246,6 +252,8 @@ namespace NoteApp
                     else d.MoveTo(d.Parent.FullName + d.Name + status);
                     toolStripStatusLabel6.Text = "[LOCK SUCCESS]";
                     toolStripStatusLabel6.BackColor = Color.Green;
+                    toolStripStatusLabel4.Text = ""; //added
+                    toolStripStatusLabel4.BackColor = Color.White; //added
                     strFolderState = "Locked";
                 }
                 btnFolderLock.Text = "Lock";
@@ -253,7 +261,9 @@ namespace NoteApp
                 datagridUpdate(strFolderOri, strFolderState);
             }
             else
-                MessageBox.Show("Folder Not Found", "Info");
+            {
+                MessageBox.Show("Pasta não existe", "Info");
+            }  
         }
 
         private void btnAddFolder_Click(object sender, EventArgs e)
@@ -280,11 +290,11 @@ namespace NoteApp
                         string pool = strFolder.Substring(0, folderBrowserDialog1.SelectedPath.LastIndexOf("."));
                         strFolderOri = pool.ToString();
                     }
-                    MessageBox.Show("Folder Exists: " + strFolderOri, "Information");
+                    MessageBox.Show("Pasta existe: " + strFolderOri, "Information");
                 }
                 else
                 {
-                    MessageBox.Show("Folder Not Found !!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Pasta não existe", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     _FOLDERlock = false;
                     btnFolderLock.Enabled = false;
                     btnFolderLock.Text = "Lock";
@@ -430,7 +440,7 @@ namespace NoteApp
 
         private bool checkpassword()
         {
-            checkpassword c = new checkpassword(); //form confirmar password
+            EncDecCheckpassword c = new EncDecCheckpassword(); //form confirmar password
             c.pass = strUnivPassword;
             if (c.ShowDialog() == DialogResult.OK)
             {
@@ -443,16 +453,16 @@ namespace NoteApp
 
         private Boolean setpassword()
         {
-            password p = new password(); //form da password (set new password)
-            p.ShowDialog(); //modal vs show
-            using (StreamWriter w = File.CreateText(strHimbara_p)) //põe o texto no ficheiro tal..
+            EncDecSetpassword p = new EncDecSetpassword(); //form da password (set new password)
+            p.ShowDialog(); //show modal
+            using (StreamWriter w = File.CreateText(strHimbara_p)) //puts the password in this file
             {
                 w.WriteLine(p.newpass);
                 strUnivPassword = p.newpass;
                 w.Flush();
                 w.Close();
             }
-            CyberCrypt._AES256.EncryptFile(strHimbara_p, strConfig); //usa a biblioteca com o caminho e pass
+            CyberCrypt._AES256.EncryptFile(strHimbara_p, strConfig); //usa path file and password to Encrypt file
             return true;
         }
 

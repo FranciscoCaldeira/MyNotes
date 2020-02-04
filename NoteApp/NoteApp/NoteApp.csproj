@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="checkpassword.cs">
+    <Compile Include="EncDecCheckpassword.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="checkpassword.Designer.cs">
-      <DependentUpon>checkpassword.cs</DependentUpon>
+    <Compile Include="EncDecCheckpassword.Designer.cs">
+      <DependentUpon>EncDecCheckpassword.cs</DependentUpon>
     </Compile>
     <Compile Include="DBconnection.cs" />
     <Compile Include="FindWord.cs">
@@ -59,17 +59,17 @@
     <Compile Include="FindWord.Designer.cs">
       <DependentUpon>FindWord.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="EncDecFrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="EncDecFrm.Designer.cs">
+      <DependentUpon>EncDecFrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="password.cs">
+    <Compile Include="EncDecSetpassword.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="password.Designer.cs">
-      <DependentUpon>password.cs</DependentUpon>
+    <Compile Include="EncDecSetpassword.Designer.cs">
+      <DependentUpon>EncDecSetpassword.cs</DependentUpon>
     </Compile>
     <Compile Include="Register.cs">
       <SubType>Form</SubType>
@@ -77,7 +77,6 @@
     <Compile Include="Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
-    <Compile Include="Singleton.cs" />
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,17 +97,29 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReplaceWord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReplaceWord.Designer.cs">
+      <DependentUpon>ReplaceWord.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Donation.resx">
       <DependentUpon>Donation.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EncDecCheckpassword.resx">
+      <DependentUpon>EncDecCheckpassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EncDecSetpassword.resx">
+      <DependentUpon>EncDecSetpassword.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FindWord.resx">
       <DependentUpon>FindWord.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="EncDecFrm.resx">
+      <DependentUpon>EncDecFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -124,6 +135,9 @@
     </Compile>
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReplaceWord.resx">
+      <DependentUpon>ReplaceWord.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

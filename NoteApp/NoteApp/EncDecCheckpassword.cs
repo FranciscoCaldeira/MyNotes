@@ -8,12 +8,12 @@ using System.Windows.Forms;
 
 namespace NoteApp
 {
-    public partial class checkpassword : Form
+    public partial class EncDecCheckpassword : Form
     {
         public string pass;
         public bool status;
         public bool _admin;
-        public checkpassword()
+        public EncDecCheckpassword()
         {
             status = false;
             _admin = false;

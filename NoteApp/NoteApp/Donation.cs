@@ -12,15 +12,37 @@ namespace NoteApp
             InitializeComponent();
         }
 
-
-        //verifica a checkbox do formulário
-        private void check_terms_CheckedChanged(object sender, EventArgs e)
+        private void btn_pay_Click(object sender, EventArgs e)
         {
-            if (check_terms.Checked)
-            {
+            string name = input_name.Text;
+            string nif = input_nif.Text;
+            string country = input_country.Text;
+            string address = input_country.Text;
+            //check_terms.Checked
 
+
+            if (name.Equals(""))
+            {
+                MessageBox.Show("Insira o nome.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else if (nif.Equals(""))
+            {
+                MessageBox.Show("Insira o nif.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else if (country.Equals(""))
+            {
+                MessageBox.Show("Insira o país.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else if (address.Equals(""))
+            {
+                MessageBox.Show("Insira a morada.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }else if (check_terms.Checked)
+            {
+                //save
+            } else
+            {
+                MessageBox.Show("Aceite os termos e condições.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
-
     }
 }
