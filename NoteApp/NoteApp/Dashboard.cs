@@ -68,17 +68,7 @@ namespace NoteApp
 
         private void saveLocalToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            string fileName = saveFileDialog1.FileName; //saveFileDialog choosen name
-            string textNote = richTextBox.Text; //text
-
-            if (textNote.Equals(""))
-            {
-                MessageBox.Show("Precisa inserir notas para guardar ficheiro.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else
-            {
-                File.WriteAllText(fileName, textNote);
-            }
+            SaveFile();
         }
 
         #endregion
@@ -106,7 +96,7 @@ namespace NoteApp
         }
         private void selectAllToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-
+            richTextBox.SelectAll();
         }
         private void findToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -149,7 +139,7 @@ namespace NoteApp
         #region "Function Save File"
         private void SaveFile()
         {
-            sfd.Title = "Guardar como"; //set title of savefiledialog
+            sfd.Title = "Guardar"; //set title of savefiledialog
             sfd.Filter = "Text Document|*.txt";//applied filter
             sfd.DefaultExt = "txt";//applied default extension
             if (sfd.ShowDialog() == DialogResult.OK)
@@ -166,7 +156,7 @@ namespace NoteApp
         }
         #endregion
 
-        #region "Function to Open File to review"
+        #region Function to Open File localy 
         private void OpenFile()
         {
             ofd.Title = "Abrir";//set title of openfiledialog
@@ -189,7 +179,7 @@ namespace NoteApp
         }
         #endregion
 
-        #region function find
+        #region function find word in richTextBox
         private void Find()
         {
             FindWord fw = new FindWord();
@@ -228,11 +218,10 @@ namespace NoteApp
             if (findWord != "")
             {
                 richTextBox.Text = richTextBox.Text.Replace(findWord, replaceWord);
-                MessageBox.Show("Done", "Done", MessageBoxButtons.OK);
             }
             else
             {
-                MessageBox.Show("Nothing to replace", "Done", MessageBoxButtons.OK);
+                MessageBox.Show("Nada para substituir", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -245,6 +234,19 @@ namespace NoteApp
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show(" 1: Regista-te na aplicação.\n 2: Faz login na aplicação.\n 3: 30 dias para usar as \"Tootls\".\n 4: Faz Donate para continuar a usufruir das \"Tootls\".\n\n DIS NoteAPP - version 1.0.0 (beta)", "Acerca", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        /// <summary>
+        ///  save a file locally https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.savefiledialog?view=netframework-4.8
+        /// </summary>
+        private void openLocalToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            OpenFile();
+        }
+
+        private void dateTimeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           richTextBox.SelectedText = DateTime.Now.ToShortTimeString() + " " + DateTime.Now.ToShortDateString(); 
         }
     }
 }

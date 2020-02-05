@@ -5,26 +5,26 @@ using System.IO;
 using System.Security.Cryptography;
 using CyberCrypt;
 
-
 namespace NoteApp
 {
     public partial class EncDecFrm : MetroFramework.Forms.MetroForm
     {
-
         #region "DECLARATION"
 
         bool _FILEencrypt, _FOLDERlock;
-        //strUnivPassword = 1ª pass definida pelo user
         string strFileEncrypt, strFileDecrypt, strFolder, strUnivPassword, strPCName, strFolderOri, strFolderState, strFolderProgramData, strHimbara_p, strHimbara_f;
         string strTSLock = ".takje"; // random name extension
         string strFile_p = "himbara_p.takje"; // save password in random name file
         string strfile_f = "himbara_f.takje"; // save log files lock in random name file
-        string strConfig = "NoteApp"; //password de encriptar e desec ficheiro guardado
+        string strConfig = "NoteApp"; //Program password to encrypt and decrypt the real password 
         public string status;
         string[] arr;
         #endregion
 
         #region"GLOBAL"
+        /// <summary>
+        /// set a password if don't find folder with user pass 
+        /// </summary>
         public void loadConfig()
         {
             //Load Password
@@ -57,7 +57,7 @@ namespace NoteApp
                 ((Control)this.tabPage2).Enabled = true;
                 ((Control)this.tabPage3).Enabled = true;
                 toolStripMenuItem1.Enabled = false;
-                metroLabel2.Text = strPCName + " sessão iniciada, utiliza a ferramenta.";
+                metroLabel2.Text = strPCName + " sessão iniciada, podes utilizar a ferramenta.";
                 //Load Folder LOG DataGridView
                 if (File.Exists(strHimbara_f))
                 {
@@ -120,13 +120,13 @@ namespace NoteApp
             btnFileEncrypt.Enabled = false;
             btnFolderLock.Enabled = false;
 
-            toolStripStatusLabel4.BackColor = Color.White;
-            toolStripStatusLabel4.Text = "";
-            toolStripStatusLabel6.BackColor = Color.White;
-            toolStripStatusLabel6.Text = "";
+            toolStripStatusLabel1.BackColor = Color.White;
+            toolStripStatusLabel1.Text = "";
+            toolStripStatusLabel2.BackColor = Color.White;
+            toolStripStatusLabel2.Text = "";
 
             strPCName = Environment.MachineName; // pc MachineName
-            metroLabel2.Text = "Olá " + strPCName + " por favor faz login para utilizar a tool";
+            metroLabel2.Text = "Olá " + strPCName + " por favor faça login para utilizar a ferramenta";
             metroTabControl1.SelectedIndex = 2;
 
             loadConfig();
@@ -146,6 +146,7 @@ namespace NoteApp
         #endregion
 
         #region "FILELOCK"
+
         private void txtBrowse_ButtonClick(object sender, EventArgs e)
         {
             openFileDialog1.Filter = "All Files (*.*)|*.*";
@@ -189,29 +190,32 @@ namespace NoteApp
             }
         }
 
+        /// <summary>
+        /// Decrypt and Encrypt FILES
+        /// </summary>
         private void btnFileEncrypt_Click(object sender, EventArgs e)
         {
             if (_FILEencrypt)
             {
-                //Decrypt
                 _FILEencrypt = false;
                 System.IO.File.Move(strFileEncrypt, strFileDecrypt);
                 CyberCrypt._AES256.DecryptFile(strFileDecrypt, strUnivPassword);
-                toolStripStatusLabel4.Text = "[DECRYPT SUCCESS]";
-                toolStripStatusLabel4.BackColor = Color.Green;
-                toolStripStatusLabel6.Text = ""; //added
-                toolStripStatusLabel6.BackColor = Color.White; //added 
+                toolStripStatusLabel1.Text = "[DECRYPT SUCCESS]";
+                toolStripStatusLabel1.BackColor = Color.Green;
+                //toolStrip msg folder clear and hide
+                toolStripStatusLabel2.Text = "";
+                toolStripStatusLabel2.BackColor = Color.White;
             }
             else
             {
-                //Encrypt
                 _FILEencrypt = true;
                 System.IO.File.Move(strFileDecrypt, strFileEncrypt);
                 CyberCrypt._AES256.EncryptFile(strFileEncrypt, strUnivPassword);
-                toolStripStatusLabel4.Text = "[ENCRYPT SUCCESS]";
-                toolStripStatusLabel4.BackColor = Color.Green;
-                toolStripStatusLabel6.Text = ""; //added
-                toolStripStatusLabel6.BackColor = Color.White; //added 
+                toolStripStatusLabel1.Text = "[ENCRYPT SUCCESS]";
+                toolStripStatusLabel1.BackColor = Color.Green;
+                //toolStrip msg folder clear and hide
+                toolStripStatusLabel2.Text = "";
+                toolStripStatusLabel2.BackColor = Color.White;
             }
             txtBrowse.Clear();
             btnFileEncrypt.Enabled = false;
@@ -235,10 +239,10 @@ namespace NoteApp
                     status = getstatus(status);
                     d.MoveTo(strFolder.Substring(0, strFolder.LastIndexOf(".")));
                     strFolder = strFolder.Substring(0, strFolder.LastIndexOf("."));
-                    toolStripStatusLabel6.Text = "[UNLOCK SUCCESS]";
-                    toolStripStatusLabel6.BackColor = Color.Green;
-                    toolStripStatusLabel4.Text = ""; //added
-                    toolStripStatusLabel4.BackColor = Color.White; //added
+                    toolStripStatusLabel2.Text = "[UNLOCK SUCCESS]";
+                    toolStripStatusLabel2.BackColor = Color.Green;
+                    toolStripStatusLabel1.Text = ""; //added
+                    toolStripStatusLabel1.BackColor = Color.White; //added
                     strFolderOri = strFolder;
                     strFolderState = "Unlock";
                 }
@@ -250,10 +254,10 @@ namespace NoteApp
                     if (!d.Root.Equals(d.Parent.FullName))
                         d.MoveTo(d.Parent.FullName + "\\" + d.Name + status);
                     else d.MoveTo(d.Parent.FullName + d.Name + status);
-                    toolStripStatusLabel6.Text = "[LOCK SUCCESS]";
-                    toolStripStatusLabel6.BackColor = Color.Green;
-                    toolStripStatusLabel4.Text = ""; //added
-                    toolStripStatusLabel4.BackColor = Color.White; //added
+                    toolStripStatusLabel2.Text = "[LOCK SUCCESS]";
+                    toolStripStatusLabel2.BackColor = Color.Green;
+                    toolStripStatusLabel1.Text = ""; //added
+                    toolStripStatusLabel1.BackColor = Color.White; //added
                     strFolderState = "Locked";
                 }
                 btnFolderLock.Text = "Lock";
@@ -451,21 +455,29 @@ namespace NoteApp
             return c.status;
         }
 
+        /// <summary>
+        /// Set a password in a document file in ProgramData directory
+        /// </summary>
+        /// <returns> boolean true</returns>
         private Boolean setpassword()
         {
-            EncDecSetpassword p = new EncDecSetpassword(); //form da password (set new password)
-            p.ShowDialog(); //show modal
+            EncDecSetpassword p = new EncDecSetpassword(); //load form to set new password
+            p.ShowDialog(); //show the modal form
             using (StreamWriter w = File.CreateText(strHimbara_p)) //puts the password in this file
             {
                 w.WriteLine(p.newpass);
                 strUnivPassword = p.newpass;
                 w.Flush();
-                w.Close();
+                w.Close();//clear and close the buffer
             }
-            CyberCrypt._AES256.EncryptFile(strHimbara_p, strConfig); //usa path file and password to Encrypt file
+            CyberCrypt._AES256.EncryptFile(strHimbara_p, strConfig); //use path file and program password to Encrypt file
             return true;
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="stat"></param>
+        /// <returns></returns>
         private string getstatus(string stat)
         {
             if (stat.LastIndexOf(arr[0]) != -1)

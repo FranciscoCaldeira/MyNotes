@@ -79,7 +79,7 @@
             this.replaceBtn.Name = "replaceBtn";
             this.replaceBtn.Size = new System.Drawing.Size(100, 28);
             this.replaceBtn.TabIndex = 4;
-            this.replaceBtn.Text = "Substitui";
+            this.replaceBtn.Text = "Substituir";
             this.replaceBtn.UseVisualStyleBackColor = true;
             this.replaceBtn.Click += new System.EventHandler(this.replaceBtn_Click);
             // 
@@ -109,7 +109,7 @@
             this.Name = "ReplaceWord";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Substitui a palavra";
+            this.Text = "Substituir a palavra";
             this.ResumeLayout(false);
             this.PerformLayout();
 
