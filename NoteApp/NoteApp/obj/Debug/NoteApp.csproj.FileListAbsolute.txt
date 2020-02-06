@@ -25,3 +25,58 @@ C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de S
 C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#project\NoteApp\NoteApp\obj\Debug\NoteApp.EncDecCheckpassword.resources
 C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#project\NoteApp\NoteApp\obj\Debug\NoteApp.EncDecSetpassword.resources
 C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#project\NoteApp\NoteApp\obj\Debug\NoteApp.ReplaceWord.resources
+C:\Users\Pc-Francisco\Desktop\Gitmadeira\notesapp\NoteApp\bin\Debug\NoteApp.exe.config
+C:\Users\Pc-Francisco\Desktop\Gitmadeira\notesapp\NoteApp\bin\Debug\NoteApp.exe
+C:\Users\Pc-Francisco\Desktop\Gitmadeira\notesapp\NoteApp\bin\Debug\NoteApp.pdb
+C:\Users\Pc-Francisco\Desktop\Gitmadeira\notesapp\NoteApp\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Pc-Francisco\Desktop\Gitmadeira\notesapp\NoteApp\bin\Debug\CyberCrypt.dll
+C:\Users\Pc-Francisco\Desktop\Gitmadeira\notesapp\NoteApp\bin\Debug\Google.Protobuf.dll
+C:\Users\Pc-Francisco\Desktop\Gitmadeira\notesapp\NoteApp\bin\Debug\MetroFramework.Design.dll
+C:\Users\Pc-Francisco\Desktop\Gitmadeira\notesapp\NoteApp\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Pc-Francisco\Desktop\Gitmadeira\notesapp\NoteApp\bin\Debug\MetroFramework.dll
+C:\Users\Pc-Francisco\Desktop\Gitmadeira\notesapp\NoteApp\bin\Debug\MySql.Data.dll
+C:\Users\Pc-Francisco\Desktop\Gitmadeira\notesapp\NoteApp\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Pc-Francisco\Desktop\Gitmadeira\notesapp\NoteApp\bin\Debug\Renci.SshNet.dll
+C:\Users\Pc-Francisco\Desktop\Gitmadeira\notesapp\NoteApp\obj\Debug\NoteApp.csprojAssemblyReference.cache
+C:\Users\Pc-Francisco\Desktop\Gitmadeira\notesapp\NoteApp\obj\Debug\NoteApp.Dashboard.resources
+C:\Users\Pc-Francisco\Desktop\Gitmadeira\notesapp\NoteApp\obj\Debug\NoteApp.Donation.resources
+C:\Users\Pc-Francisco\Desktop\Gitmadeira\notesapp\NoteApp\obj\Debug\NoteApp.EncDecCheckpassword.resources
+C:\Users\Pc-Francisco\Desktop\Gitmadeira\notesapp\NoteApp\obj\Debug\NoteApp.EncDecSetpassword.resources
+C:\Users\Pc-Francisco\Desktop\Gitmadeira\notesapp\NoteApp\obj\Debug\NoteApp.FindWord.resources
+C:\Users\Pc-Francisco\Desktop\Gitmadeira\notesapp\NoteApp\obj\Debug\NoteApp.EncDecFrm.resources
+C:\Users\Pc-Francisco\Desktop\Gitmadeira\notesapp\NoteApp\obj\Debug\NoteApp.Login.resources
+C:\Users\Pc-Francisco\Desktop\Gitmadeira\notesapp\NoteApp\obj\Debug\NoteApp.Properties.Resources.resources
+C:\Users\Pc-Francisco\Desktop\Gitmadeira\notesapp\NoteApp\obj\Debug\NoteApp.Register.resources
+C:\Users\Pc-Francisco\Desktop\Gitmadeira\notesapp\NoteApp\obj\Debug\NoteApp.ReplaceWord.resources
+C:\Users\Pc-Francisco\Desktop\Gitmadeira\notesapp\NoteApp\obj\Debug\NoteApp.csproj.GenerateResource.cache
+C:\Users\Pc-Francisco\Desktop\Gitmadeira\notesapp\NoteApp\obj\Debug\NoteApp.csproj.CopyComplete
+C:\Users\Pc-Francisco\Desktop\Gitmadeira\notesapp\NoteApp\obj\Debug\NoteApp.exe
+C:\Users\Pc-Francisco\Desktop\Gitmadeira\notesapp\NoteApp\obj\Debug\NoteApp.pdb
+C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#GitLabumadeira\notesapp\NoteApp\bin\Debug\NoteApp.exe.config
+C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#GitLabumadeira\notesapp\NoteApp\bin\Debug\NoteApp.exe
+C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#GitLabumadeira\notesapp\NoteApp\bin\Debug\NoteApp.pdb
+C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#GitLabumadeira\notesapp\NoteApp\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#GitLabumadeira\notesapp\NoteApp\bin\Debug\CyberCrypt.dll
+C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#GitLabumadeira\notesapp\NoteApp\bin\Debug\Google.Protobuf.dll
+C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#GitLabumadeira\notesapp\NoteApp\bin\Debug\MetroFramework.Design.dll
+C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#GitLabumadeira\notesapp\NoteApp\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#GitLabumadeira\notesapp\NoteApp\bin\Debug\MetroFramework.dll
+C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#GitLabumadeira\notesapp\NoteApp\bin\Debug\MySql.Data.dll
+C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#GitLabumadeira\notesapp\NoteApp\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#GitLabumadeira\notesapp\NoteApp\bin\Debug\Renci.SshNet.dll
+C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#GitLabumadeira\notesapp\NoteApp\obj\Debug\NoteApp.csprojAssemblyReference.cache
+C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#GitLabumadeira\notesapp\NoteApp\obj\Debug\NoteApp.Dashboard.resources
+C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#GitLabumadeira\notesapp\NoteApp\obj\Debug\NoteApp.Donation.resources
+C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#GitLabumadeira\notesapp\NoteApp\obj\Debug\NoteApp.EncDecCheckpassword.resources
+C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#GitLabumadeira\notesapp\NoteApp\obj\Debug\NoteApp.EncDecSetpassword.resources
+C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#GitLabumadeira\notesapp\NoteApp\obj\Debug\NoteApp.FindWord.resources
+C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#GitLabumadeira\notesapp\NoteApp\obj\Debug\NoteApp.EncDecFrm.resources
+C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#GitLabumadeira\notesapp\NoteApp\obj\Debug\NoteApp.Login.resources
+C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#GitLabumadeira\notesapp\NoteApp\obj\Debug\NoteApp.Properties.Resources.resources
+C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#GitLabumadeira\notesapp\NoteApp\obj\Debug\NoteApp.Register.resources
+C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#GitLabumadeira\notesapp\NoteApp\obj\Debug\NoteApp.ReplaceWord.resources
+C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#GitLabumadeira\notesapp\NoteApp\obj\Debug\NoteApp.csproj.GenerateResource.cache
+C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#GitLabumadeira\notesapp\NoteApp\obj\Debug\NoteApp.csproj.CopyComplete
+C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#GitLabumadeira\notesapp\NoteApp\obj\Debug\NoteApp.exe
+C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#GitLabumadeira\notesapp\NoteApp\obj\Debug\NoteApp.pdb
+C:\Users\Pc-Francisco\Desktop\Universidade\1ºano\Desenho e Implementação de Software\Projeto\c#GitLabumadeira\notesapp\NoteApp\obj\Debug\NoteApp.Notification.resources

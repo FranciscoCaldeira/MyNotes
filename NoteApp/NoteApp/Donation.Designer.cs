@@ -31,15 +31,16 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Donation));
             this.btn_reset = new System.Windows.Forms.Button();
             this.input_name = new System.Windows.Forms.TextBox();
-            this.lbl_username = new System.Windows.Forms.Label();
+            this.lbl_name = new System.Windows.Forms.Label();
             this.lbl_title = new System.Windows.Forms.Label();
             this.input_nif = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbl_nif = new System.Windows.Forms.Label();
             this.input_country = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lbl_coutry = new System.Windows.Forms.Label();
             this.input_address = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lbl_adress = new System.Windows.Forms.Label();
             this.check_terms = new System.Windows.Forms.CheckBox();
+            this.lbl_price = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn_reset
@@ -59,14 +60,14 @@
             this.input_name.Size = new System.Drawing.Size(305, 22);
             this.input_name.TabIndex = 10;
             // 
-            // lbl_username
+            // lbl_name
             // 
-            this.lbl_username.AutoSize = true;
-            this.lbl_username.Location = new System.Drawing.Point(27, 56);
-            this.lbl_username.Name = "lbl_username";
-            this.lbl_username.Size = new System.Drawing.Size(49, 17);
-            this.lbl_username.TabIndex = 8;
-            this.lbl_username.Text = "Nome:";
+            this.lbl_name.AutoSize = true;
+            this.lbl_name.Location = new System.Drawing.Point(27, 56);
+            this.lbl_name.Name = "lbl_name";
+            this.lbl_name.Size = new System.Drawing.Size(49, 17);
+            this.lbl_name.TabIndex = 8;
+            this.lbl_name.Text = "Nome:";
             // 
             // lbl_title
             // 
@@ -84,14 +85,14 @@
             this.input_nif.Size = new System.Drawing.Size(305, 22);
             this.input_nif.TabIndex = 15;
             // 
-            // label2
+            // lbl_nif
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(27, 95);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(33, 17);
-            this.label2.TabIndex = 14;
-            this.label2.Text = "NIF:";
+            this.lbl_nif.AutoSize = true;
+            this.lbl_nif.Location = new System.Drawing.Point(27, 95);
+            this.lbl_nif.Name = "lbl_nif";
+            this.lbl_nif.Size = new System.Drawing.Size(33, 17);
+            this.lbl_nif.TabIndex = 14;
+            this.lbl_nif.Text = "NIF:";
             // 
             // input_country
             // 
@@ -100,14 +101,14 @@
             this.input_country.Size = new System.Drawing.Size(305, 22);
             this.input_country.TabIndex = 17;
             // 
-            // label3
+            // lbl_coutry
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(27, 139);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(39, 17);
-            this.label3.TabIndex = 16;
-            this.label3.Text = "País:";
+            this.lbl_coutry.AutoSize = true;
+            this.lbl_coutry.Location = new System.Drawing.Point(27, 139);
+            this.lbl_coutry.Name = "lbl_coutry";
+            this.lbl_coutry.Size = new System.Drawing.Size(39, 17);
+            this.lbl_coutry.TabIndex = 16;
+            this.lbl_coutry.Text = "País:";
             // 
             // input_address
             // 
@@ -116,14 +117,14 @@
             this.input_address.Size = new System.Drawing.Size(305, 22);
             this.input_address.TabIndex = 19;
             // 
-            // label4
+            // lbl_adress
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(27, 179);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(60, 17);
-            this.label4.TabIndex = 18;
-            this.label4.Text = "Morada:";
+            this.lbl_adress.AutoSize = true;
+            this.lbl_adress.Location = new System.Drawing.Point(27, 179);
+            this.lbl_adress.Name = "lbl_adress";
+            this.lbl_adress.Size = new System.Drawing.Size(60, 17);
+            this.lbl_adress.TabIndex = 18;
+            this.lbl_adress.Text = "Morada:";
             // 
             // check_terms
             // 
@@ -135,26 +136,38 @@
             this.check_terms.Text = "Aceito os termos e condições do NoteApp";
             this.check_terms.UseVisualStyleBackColor = true;
             // 
+            // lbl_price
+            // 
+            this.lbl_price.AutoSize = true;
+            this.lbl_price.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_price.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.lbl_price.Location = new System.Drawing.Point(159, 283);
+            this.lbl_price.Name = "lbl_price";
+            this.lbl_price.Size = new System.Drawing.Size(109, 29);
+            this.lbl_price.TabIndex = 21;
+            this.lbl_price.Text = "1€ + IVA";
+            // 
             // Donation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(424, 333);
+            this.Controls.Add(this.lbl_price);
             this.Controls.Add(this.check_terms);
             this.Controls.Add(this.input_address);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lbl_adress);
             this.Controls.Add(this.input_country);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lbl_coutry);
             this.Controls.Add(this.input_nif);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lbl_nif);
             this.Controls.Add(this.lbl_title);
             this.Controls.Add(this.btn_reset);
             this.Controls.Add(this.input_name);
-            this.Controls.Add(this.lbl_username);
+            this.Controls.Add(this.lbl_name);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(442, 380);
             this.Name = "Donation";
-            this.Text = "Pagar Tool";
+            this.Text = "Pagamento";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -164,14 +177,15 @@
 
         private System.Windows.Forms.Button btn_reset;
         private System.Windows.Forms.TextBox input_name;
-        private System.Windows.Forms.Label lbl_username;
+        private System.Windows.Forms.Label lbl_name;
         private System.Windows.Forms.Label lbl_title;
         private System.Windows.Forms.TextBox input_nif;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbl_nif;
         private System.Windows.Forms.TextBox input_country;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lbl_coutry;
         private System.Windows.Forms.TextBox input_address;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lbl_adress;
         private System.Windows.Forms.CheckBox check_terms;
+        private System.Windows.Forms.Label lbl_price;
     }
 }

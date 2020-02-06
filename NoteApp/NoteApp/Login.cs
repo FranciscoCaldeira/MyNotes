@@ -10,6 +10,8 @@ namespace NoteApp
         //connection to local database
         DBconnection conn = new DBconnection();
         DataTable DtUsers = new DataTable();
+        Validator validator = new Validator();
+        public static string email;
 
         public Login()
         {
@@ -80,10 +82,10 @@ namespace NoteApp
         }
         #endregion
 
-        #region Function do login
+        #region Function do the login
         private void Do_login()
         {
-            string email = input_username.Text;
+            email = input_username.Text; // this email is going to the next page
             string password = input_password.Text;
 
             if (email.Equals(""))

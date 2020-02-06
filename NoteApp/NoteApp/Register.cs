@@ -13,8 +13,8 @@ namespace NoteApp
 {
     public partial class Register : Form
     {
-        //connection to local database
         DBconnection conn = new DBconnection();
+        Validator validator = new Validator();
 
         public Register()
         {
@@ -81,6 +81,9 @@ namespace NoteApp
             else if (password.Equals(""))
             {
                 MessageBox.Show("Insira a password.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            } else if (validator.IsValidEmail(email))
+            {
+                MessageBox.Show("Email inválido.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
